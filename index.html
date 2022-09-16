@@ -39,24 +39,29 @@
 
     <!--Post Filter-->
 
-    <div class="post-filter container">
+    <!-- <div class="post-filter container">
         <span class="filter-item active-filter" data-filter="all">All</span>
-        <span class="filter-item" data-filter="design">Design</span>
-        <span class="filter-item" data-filter="tech">Tech</span>
-        <span class="filter-item" data-filter="mobile">Mobile</span>
-    </div>
+        <span class="filter-item" data-filter="shortestpath">Shortest Path</span>
+        <span class="filter-item" data-filter="Greedy">Greedy Method</span>
+        <span class="filter-item" data-filter="Graph">Graph</span>
+        <span class="filter-item" data-filter="dp">Dynamic Programming</span>
+        <span class="filter-item" data-filter="tree">Tree</span>
+    </div> -->
 
     <!--Post-->
     <section class="post container">
         <!--post1-->
-        <div class="post-box mobile">
-            <img src="img/post4.jpg" alt="" class="post-img">
-            <h2 class="category">Mobile</h2>
-            <a href="https://showmikdebnath.github.io/diskastra_dsa/" class="post-title">
-                How to create a mobile app
+        <div class="post-box shortestpath">
+            <img src="img/dijkstra_pic1.jpg" alt="" class="post-img">
+            <h2 class="category">Dijkstra Algorithm</h2>
+            <a href="dijkstra.html" class="post-title">
+                Learn Dijkstra Algorithm
             </a>
+            <!--<a href="https://showmikdebnath.github.io/diskastra_dsa/" class="post-title">
+                How to create a mobile app
+            </a>-->
             <span class="post-date">12 Feb 2022</span>
-            <p class="post-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam corporis magni dolorum deleniti atque, illum temporibus placeat id voluptatum, sunt vero recusandae accusamus rerum odio!</p>
+            <p class="post-description">Dijkastra’s Algorithm works on the basis that any subpath B=>D of the shortest path A=>D between vertices A and D is also the shortest path between vertices B and D.</p>
             <!--profile-->
             <div class="profile">
                 <img src="img/placeholder.png" alt="" class="profile-img">
@@ -65,14 +70,17 @@
         </div>
 
         <!--post2-->
-        <div class="post-box design">
+        <div class="post-box dp">
             <img src="img/post2.jpg" alt="" class="post-img">
-            <h2 class="category">Design</h2>
-            <a href="post-page.html" class="post-title">
+            <h2 class="category">Dynamic Programming</h2>
+            <!--<a href="post-page.html" class="post-title">
                 How to create a mobile app
+            </a>-->
+            <a href="dynamicProgramming.html" class="post-title">
+                Learn Dynamic Programming
             </a>
             <span class="post-date">12 Feb 2022</span>
-            <p class="post-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam corporis magni dolorum deleniti atque, illum temporibus placeat id voluptatum, sunt vero recusandae accusamus rerum odio!</p>
+            <p class="post-description">Dynamic Programming is a technique in computer programming that helps to efficiently solve a class of problems that have overlapping subproblems and optimal substructure properties.</p>
             <!--profile-->
             <div class="profile">
                 <img src="img/placeholder.png" alt="" class="profile-img">
@@ -80,11 +88,11 @@
             </div>
         </div>
         <!--post3-->
-        <div class="post-box mobile">
+        <div class="post-box tree">
             <img src="img/post3.jpg" alt="" class="post-img">
-            <h2 class="category">Mobile</h2>
+            <h2 class="category">AVL Tree</h2>
             <a href="post-page.html" class="post-title">
-                How to create a mobile app
+                Learn AVL Tree with animation
             </a>
             <span class="post-date">12 Feb 2022</span>
             <p class="post-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam corporis magni dolorum deleniti atque, illum temporibus placeat id voluptatum, sunt vero recusandae accusamus rerum odio!</p>
@@ -96,11 +104,11 @@
         </div>
 
         <!--post4-->
-        <div class="post-box tech">
+        <div class="post-box Graph">
             <img src="img/post5.jpg" alt="" class="post-img">
-            <h2 class="category">Tech</h2>
-            <a href="post-page.html" class="post-title">
-                How to create a mobile app
+            <h2 class="category">Graph</h2>
+            <a href="graph.html" class="post-title">
+                Learn graph with animation
             </a>
             <span class="post-date">12 Feb 2022</span>
             <p class="post-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam corporis magni dolorum deleniti atque, illum temporibus placeat id voluptatum, sunt vero recusandae accusamus rerum odio!</p>
@@ -112,11 +120,11 @@
         </div>
 
         <!--post5-->
-        <div class="post-box design">
+        <div class="post-box Greedy">
             <img src="img/post6.jpg" alt="" class="post-img">
-            <h2 class="category">Design</h2>
-            <a href="post-page.html" class="post-title">
-                How to create a mobile app
+            <h2 class="category">Greedy Algorithm</h2>
+            <a href="greedy.html" class="post-title">
+                Learn Greedy Algorithm
             </a>
             <span class="post-date">12 Feb 2022</span>
             <p class="post-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam corporis magni dolorum deleniti atque, illum temporibus placeat id voluptatum, sunt vero recusandae accusamus rerum odio!</p>
@@ -126,68 +134,7 @@
                 <span class="profile-name">Showmik Debnath</span>
             </div>
         </div>
-        <!--post6-->
-        <div class="post-box tech">
-            <img src="img/post7.jpg" alt="" class="post-img">
-            <h2 class="category">Tech</h2>
-            <a href="post-page.html" class="post-title">
-                How to create a mobile app
-            </a>
-            <span class="post-date">12 Feb 2022</span>
-            <p class="post-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam corporis magni dolorum deleniti atque, illum temporibus placeat id voluptatum, sunt vero recusandae accusamus rerum odio!</p>
-            <!--profile-->
-            <div class="profile">
-                <img src="img/placeholder.png" alt="" class="profile-img">
-                <span class="profile-name">Showmik Debnath</span>
-            </div>
-        </div>
-
-        <!--post7-->
-        <div class="post-box mobile">
-            <img src="img/post2.jpg" alt="" class="post-img">
-            <h2 class="category">Mobile</h2>
-            <a href="post-page.html" class="post-title">
-                How to create a mobile app
-            </a>
-            <span class="post-date">12 Feb 2022</span>
-            <p class="post-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam corporis magni dolorum deleniti atque, illum temporibus placeat id voluptatum, sunt vero recusandae accusamus rerum odio!</p>
-            <!--profile-->
-            <div class="profile">
-                <img src="img/placeholder.png" alt="" class="profile-img">
-                <span class="profile-name">Showmik Debnath</span>
-            </div>
-        </div>
-
-        <!--post8-->
-        <div class="post-box tech">
-            <img src="img/post3.jpg" alt="" class="post-img">
-            <h2 class="category">Tech</h2>
-            <a href="post-page.html" class="post-title">
-                How to create a mobile app
-            </a>
-            <span class="post-date">12 Feb 2022</span>
-            <p class="post-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam corporis magni dolorum deleniti atque, illum temporibus placeat id voluptatum, sunt vero recusandae accusamus rerum odio!</p>
-            <!--profile-->
-            <div class="profile">
-                <img src="img/placeholder.png" alt="" class="profile-img">
-                <span class="profile-name">Showmik Debnath</span>
-            </div>
-        </div>
-        <!--post9-->
-        <div class="post-box design">
-            <img src="img/post4.jpg" alt="" class="post-img">
-            <h2 class="category">Design</h2>
-            <a href="post-page.html" class="post-title">
-                How to create a mobile app
-            </a>
-            <span class="post-date">12 Feb 2022</span>
-            <p class="post-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam corporis magni dolorum deleniti atque, illum temporibus placeat id voluptatum, sunt vero recusandae accusamus rerum odio!</p>
-            <!--profile-->
-            <div class="profile">
-                <img src="img/placeholder.png" alt="" class="profile-img">
-                <span class="profile-name">Showmik Debnath</span>
-            </div>
-        </div>
+        
     </section>
 
     <!--footer-->
