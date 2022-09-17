@@ -36,7 +36,7 @@
             <h1 class="header-title">
                 Graph
             </h1>
-            <img src="img/dijkstra_pic1.jpg" alt="" class="header-img">
+            <img src="img/graph_coverpic.png" alt="" class="header-img">
         </div>
     </section>
 
@@ -45,7 +45,7 @@
 
     <!--Post-->
     <section class="post-content post-container">
-        <h2 class="sub-heading">Graph</h2>
+        <h2 class="sub-heading">Graph Classification of graph - directed and undirected</h2>
         <!--<p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quae earum delectus
             aspernatur numquam. Iure eum voluptate ex architecto itaque nostrum quas esse qui excepturi consectetur
             deleniti veritatis possimus molestias vel quod, ad veniam placeat similique dolor minima vero quidem libero.
@@ -69,57 +69,41 @@
             Officia blanditiis impedit id.</p>
         -->
         <p class="font-1">
-            Dijkastra’s algorithm allows us to find the shortest path between any two vertices of a graph.
+            A Graph is a non-linear data structure consisting of nodes and edges.
             <br>
             <br>
             <b>How Dijkastra’s Algorithm works-</b>
             <br>
             <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;Dijkastra’s Algorithm works on the basis that any subpath B=>D of the shortest path A=>D between vertices A and D is also the shortest path between vertices B and D.
+            &nbsp;&nbsp;&nbsp;&nbsp;The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph. More formally a Graph can be defined as, 
             <br>
-            Dijkastra’s used this property in the opposite direction i.e we overestimate the distance of each vertex from the starting vertex. Then we visit each node and its neighbors to find the shortest subpath to those neighbors.
+            &nbsp;&nbsp;&nbsp;&nbsp;A Graph consists of a finite set of vertices(or nodes) and a set of Edges which connect a pair of nodes.
             <br>
-            The algorithm uses a greedy approach in the sense that we find the next best solution hoping that the end result is the best solution for the whole problem.
+            <img class="img-blo" src="img/graph_post1.png" alt="diskastra1">
+            <br><br>
+            In the above Graph, the set of vertices V = {0,1,2,3,4} and the set of edges E = {01, 12, 23, 34, 04, 14, 13}.
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Graphs are used to solve many real-life problems. Graphs are used to represent networks. The networks may include paths in a city or telephone network or circuit network. Graphs are also used in social networks like linkedIn, Facebook.
+            <br>For example, in Facebook, each person is represented with a vertex(or node). Each node is a structure and contains information like person id, name, gender, locale etc.
 
             <br><br>
-            <b>Idea-</b>
+            There are two types of Graph- <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Undirected Graph<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Directed Graph<br>
             <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;1. Assign a distance value to all vertices in the input graph. Initialize all distance values as INFINITE, Assign distance value as 0 for the source vertex.
+            <b>Undirected Graph:</b> An undirected graph is a set of nodes and a set of links between the nodes.<br> 
+            The order of the two connected vertices is unimportant. An undirected graph is a finite set of vertices together with a finite set of edges.
             <br>
-            <img class="img-blo" src="img/dijkastra1.png" alt="diskastra1">
+            <br>
+            <img class="img-blo" src="img/graph_post2.png" alt="diskastra1">
             <br><br>
-            <img class="img-blo" src="img/dijkastra2.png" alt="diskastra2">
+            <b>Directed Graph:</b>  A directed graph, also called a digraph, is a graph in which the edges have a direction.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is usually indicated with an arrow on the edge; more formally, if v and w are vertices, an edge is an unordered pair {v,w}, while a directed edge, called an arc, is an ordered pair (v,w) or (w,v).
+            <br>
+            <br>
+            <img class="img-blo" src="img/graph_post3.png" alt="diskastra1">
             <br><br>
-            <img class="img-blo" src="img/dijkastra3.png" alt="diskastra3">
-            <br>
-            <br>
 
-            <br>
-            <b>CP Problem:</b>
-            <br>
-            Given a weight graph. Find the single source shortest path from a vertex U to all the vertices in the graph. If the node is unreachable, then print -1.
-            <br><br>
-            <b>Note: </b>The weights of the edges must be positive,
-            <b>Sample test case:</b>
-            <br><br>
-            <b>Input: </b>
-            <br>
-            4&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;[4 vertices and 4 Edges]
-            <br>1&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;24&nbsp;&nbsp;&nbsp;&nbsp;[1,2 are edges and 24 is weights/cost]
-            <br>1&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;20
-            <br>3&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;3
-            <br>4&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;12
-            <br>1&nbsp;&nbsp;&nbsp;&nbsp;[source edges]<br><br>
-
-            <b>Output: </b>
-            <br>
-            0&nbsp;&nbsp;&nbsp;&nbsp;24&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;15
             
-            <br><br>
-            <b>Source Code</b>
-            <br>
-            <br>
-            <img class="img-blo" src="img/dijkastra_sourceCode..png" alt="diskastrasourcecode">
             
 
             
@@ -130,7 +114,7 @@
         </p>
 
         <div class="iframe-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6i7UpHNTGI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iOkVLFVCxFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
 

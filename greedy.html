@@ -36,7 +36,7 @@
             <h1 class="header-title">
                 Greedy Algorithm
             </h1>
-            <img src="img/dijkstra_pic1.jpg" alt="" class="header-img">
+            <img src="img/greedy_coverpic.png" alt="" class="header-img">
         </div>
     </section>
 
@@ -69,57 +69,45 @@
             Officia blanditiis impedit id.</p>
         -->
         <p class="font-1">
-            Dijkastra’s algorithm allows us to find the shortest path between any two vertices of a graph.
+            A greedy algorithm is an approach for solving a problem by selecting the best option available at the moment.
             <br>
-            <br>
-            <b>How Dijkastra’s Algorithm works-</b>
-            <br>
-            <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;Dijkastra’s Algorithm works on the basis that any subpath B=>D of the shortest path A=>D between vertices A and D is also the shortest path between vertices B and D.
-            <br>
-            Dijkastra’s used this property in the opposite direction i.e we overestimate the distance of each vertex from the starting vertex. Then we visit each node and its neighbors to find the shortest subpath to those neighbors.
-            <br>
-            The algorithm uses a greedy approach in the sense that we find the next best solution hoping that the end result is the best solution for the whole problem.
+            It doesn’t worry whether the current best result will bring the overall optimal result.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Actually, it is not an algorithm, it is a technique.<br>
+            <br>This algorithm may not produce the best result for all the problems. It’s because it always goes for the local best choice to produce the global best result.<br>
 
-            <br><br>
-            <b>Idea-</b>
-            <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;1. Assign a distance value to all vertices in the input graph. Initialize all distance values as INFINITE, Assign distance value as 0 for the source vertex.
-            <br>
-            <img class="img-blo" src="img/dijkastra1.png" alt="diskastra1">
-            <br><br>
-            <img class="img-blo" src="img/dijkastra2.png" alt="diskastra2">
-            <br><br>
-            <img class="img-blo" src="img/dijkastra3.png" alt="diskastra3">
-            <br>
-            <br>
+            <br>However, we can determine if the algorithm can be used with any problem if the problem has the following properties.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 1. Greedy choice property: If an optimal solution to the problem can be found by choosing the best choice at each step without considering the previous steps once chosen. The problem can be solved using a greedy approach.  This Property is called greedy choice property.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 2. Optimal substructure: If the optimal overall solution to the problem corresponds to the optimal solution to its subproblems, then the problem can be solved using a greedy approach. This property is called optimal substructure.<br>
 
             <br>
-            <b>CP Problem:</b>
+            <b>Greedy algorithms have some advantages and disadvantages:
+            </b>
             <br>
-            Given a weight graph. Find the single source shortest path from a vertex U to all the vertices in the graph. If the node is unreachable, then print -1.
-            <br><br>
-            <b>Note: </b>The weights of the edges must be positive,
-            <b>Sample test case:</b>
-            <br><br>
-            <b>Input: </b>
             <br>
-            4&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;[4 vertices and 4 Edges]
-            <br>1&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;24&nbsp;&nbsp;&nbsp;&nbsp;[1,2 are edges and 24 is weights/cost]
-            <br>1&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;20
-            <br>3&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;3
-            <br>4&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;12
-            <br>1&nbsp;&nbsp;&nbsp;&nbsp;[source edges]<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;1. It is quite easy to come up with a greedy algorithm (or even multiple greedy algorithms) for a problem.
+            <br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;2. Analyzing the run time for greedy algorithms will generally be much easier than for other techniques (like Divide and conquer). For the Divide and conquer technique, it is not clear whether the technique is fast or slow. This is because at each level of recursion the size gets smaller and the number of sub-problem increases.
+            <br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;3. The difficult past is that for greedy algorithms you have to work much harder to understand correctness issues. Even with the correct algorithm, it is hard to prove why it is correct. Proving that a greedy algorithm is correct is more of an art than science. It involves a lot of creativity.
+            <br>
+            <br>
+            <b>Note:</b> Most Greedy algorithms are not correct.<br>
 
-            <b>Output: </b>
+            <br>As mentioned earlier, the greedy algorithm doesn't always produce the optimal solution. This is the major disadvantage of the algorithm.
             <br>
-            0&nbsp;&nbsp;&nbsp;&nbsp;24&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;15
+            <b>For example,</b> suppose we want to find the longest path in the graph below from root to leaf. Let's use the greedy algorithm here.
+            <br>
+            <br>
+            <img class="img-blo" src="img/greedy_post1.png" alt="diskastra1">
+            <br><br>
+            <b>Greedy Approach</b>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;1. Let's start with the root node 20. The weight of the right child is 3 and the weight of the left child is 2.
+            <br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;2. Our problem is to find the largest path. And, the optimal solution at the moment is 3. So, the greedy algorithm will choose 3. 
+            <br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;3. Finally the weight of an only child of 3 is 1. This gives us our final result 20 + 3 + 1 = 24.
+            <br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;However, it is not the optimal solution. There is another path that carries more weight (20 + 2 + 10 = 32) as shown in the image below.
+            <br><br>
+            <img class="img-blo" src="img/greedy_post2.png" alt="diskastra1">
+            <br><br>
+
             
-            <br><br>
-            <b>Source Code</b>
-            <br>
-            <br>
-            <img class="img-blo" src="img/dijkastra_sourceCode..png" alt="diskastrasourcecode">
             
 
             
@@ -130,7 +118,7 @@
         </p>
 
         <div class="iframe-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6i7UpHNTGI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rc4Ib2b9DY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
 

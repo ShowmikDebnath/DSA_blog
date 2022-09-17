@@ -36,7 +36,7 @@
             <h1 class="header-title">
                 AVL Tree
             </h1>
-            <img src="img/dijkstra_pic1.jpg" alt="" class="header-img">
+            <img src="img/avl_coverpic.jpg" alt="" class="header-img">
         </div>
     </section>
 
@@ -69,57 +69,32 @@
             Officia blanditiis impedit id.</p>
         -->
         <p class="font-1">
-            Dijkastra’s algorithm allows us to find the shortest path between any two vertices of a graph.
+            AVL tree is a self-balancing binary search tree in which each node maintains extra information called a balance factor whose value is either -1, 0 or +1.
             <br>
             <br>
-            <b>How Dijkastra’s Algorithm works-</b>
+            AVL tree got its name after its inventor Georgy Adelson-Velsky and Landis.
             <br>
             <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;Dijkastra’s Algorithm works on the basis that any subpath B=>D of the shortest path A=>D between vertices A and D is also the shortest path between vertices B and D.
+            Balance Factor Balance factor of a node in an AVL tree is the difference between the height of the left subtree and that of the right subtree of that node.
+            <br>Balance Factor = (Height of Left Subtree - Height of Right Subtree) or (Height of Right Subtree - Height of Left Subtree)
+            <br>The self balancing property of an avl tree is maintained by the balance factor. The value of balance factor should always be -1, 0 or +1.
+            <br><br>An example of a balanced avl tree is:
             <br>
-            Dijkastra’s used this property in the opposite direction i.e we overestimate the distance of each vertex from the starting vertex. Then we visit each node and its neighbors to find the shortest subpath to those neighbors.
+            <img class="img-blo" src="img/avltree_post.jpg" alt="diskastra1">
+            <br><br>
+            <br><b>Why AVL Trees? </b>
             <br>
-            The algorithm uses a greedy approach in the sense that we find the next best solution hoping that the end result is the best solution for the whole problem.
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Most of the BST operations (e.g., search, max, min, insert, delete.. etc) take O(h) time where h is the height of the BST. The cost of these operations may become O(n) for a skewed Binary tree. If we make sure that height of the tree remains O(Logn) after every insertion and deletion, then we can guarantee an upper bound of O(Logn) for all these operations. The height of an AVL tree is always O(Logn) where n is the number of nodes in the tree (See this video lecture for proof).
 
-            <br><br>
-            <b>Idea-</b>
-            <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;1. Assign a distance value to all vertices in the input graph. Initialize all distance values as INFINITE, Assign distance value as 0 for the source vertex.
-            <br>
-            <img class="img-blo" src="img/dijkastra1.png" alt="diskastra1">
-            <br><br>
-            <img class="img-blo" src="img/dijkastra2.png" alt="diskastra2">
-            <br><br>
-            <img class="img-blo" src="img/dijkastra3.png" alt="diskastra3">
-            <br>
-            <br>
+            
 
-            <br>
-            <b>CP Problem:</b>
-            <br>
-            Given a weight graph. Find the single source shortest path from a vertex U to all the vertices in the graph. If the node is unreachable, then print -1.
-            <br><br>
-            <b>Note: </b>The weights of the edges must be positive,
-            <b>Sample test case:</b>
-            <br><br>
-            <b>Input: </b>
-            <br>
-            4&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;[4 vertices and 4 Edges]
-            <br>1&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;24&nbsp;&nbsp;&nbsp;&nbsp;[1,2 are edges and 24 is weights/cost]
-            <br>1&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;20
-            <br>3&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;3
-            <br>4&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;12
-            <br>1&nbsp;&nbsp;&nbsp;&nbsp;[source edges]<br><br>
-
-            <b>Output: </b>
-            <br>
-            0&nbsp;&nbsp;&nbsp;&nbsp;24&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;15
             
             <br><br>
             <b>Source Code</b>
             <br>
             <br>
-            <img class="img-blo" src="img/dijkastra_sourceCode..png" alt="diskastrasourcecode">
+            <img class="img-blo" src="img/avl_sourceCode..png" alt="diskastrasourcecode">
             
 
             
@@ -130,7 +105,7 @@
         </p>
 
         <div class="iframe-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6i7UpHNTGI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mDLBFaOcbtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
 
