@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post page</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <!--Nav-->
+        <div class="nav container">
+            <!--Logo-->
+            <a href="index.html" class="logo">Coders<span>Combo</span></a>
+
+            <!--<a href="#" class="login">Login</a>-->
+
+        </div>
+    </header>
+
+    <!--post content-->
+    <section class="post-header">
+        <div class="header-content post-container">
+            <!--back to home-->
+            <a href="index.html" class="back-home">Back To Home</a>
+            <!--Title-->
+            <h1 class="header-title">
+                Stack
+            </h1>
+            <img src="img/Stack1.png" alt="" class="header-img">
+        </div>
+    </section>
+
+
+
+
+    <!--Post-->
+    <section class="post-content post-container">
+        <h2 class="sub-heading">Stack Algorithm</h2>
+
+        <p class="font-1">
+            Stores a list of items in which an item can be added to or removed from the list only at one end.
+            <br>
+            &nbsp;&nbsp;<h2><b>LIFO Principle of Stack :-</b></h2>
+            Stack follows LIFO (last in, first out) order or approach in which the operations are performed. This means that the element which was added last to the stack will be the first element to be removed from the stack.
+            <br>
+            <br>
+            <img src="img/Stack2.png" alt="Stack example  visualised" class="">
+            <b>Stack Operations :-</b>
+            <br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<b>push(x) :-</b> Add an element to the top of a stack.
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<b>pop(x)  :-</b> Remove an element from the top of a stack.
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<b>top()  :-</b> Point the top most element.
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<b>empty() :-</b> Tests if the stack is empty.
+            <br>
+            <br>
+            &nbsp;<b>Example :-</b>
+            <br>
+            <br>
+            <img src="img/Stack3.png" alt="Stack example  visualised" class="">
+
+            &nbsp;&nbsp;<h3><b>Process :-</b></h3>
+            &nbsp;&nbsp;<h3><b>Step 1 :-</b></h3>We initially have the element Y and Z. We have pushed element X into the stack. The top of the stack will point to the element X.
+            &nbsp;&nbsp;<h3><b>Step 2 :-</b></h3>We have then performed a pop operation, removing the top element from the stack. The element X is popped from the stack. The top of the stack now points to the element Y.
+            &nbsp;&nbsp;<h3><b>Step 3 :-</b></h3>When the pop operation is performed then the top most element will be changed.
+            &nbsp;&nbsp;<h3><b>Step 4 :-</b></h3>Finally, the empty() operation checks if the stack is empty or not. The top of an empty stack is set to -1.
+            <br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>*</b>When the stack is empty it returns “True”.
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>*</b>When a stack has few elements or is full then it’s return “False”.
+            <br>
+            <br>
+            &nbsp;&nbsp;<h3><b>CP Problem :-</b></h3>
+            Alice is rearranging her library. She takes the innermost shelf and reverses the order of books. She breaks the walls of the shelf. In the end, there will be only books and no shelf walls. Print the order of books.
+            Opening and closing walls of shelves are shown by '/' and '\' respectively whereas books are represented by lowercase alphabets.
+            <br>
+            <br>
+            &nbsp;&nbsp;<h3><b>Input format:-</b></h3>
+            The first line contains a string  displaying her library.
+            &nbsp;&nbsp;<h3><b>Output format:-</b></h3>
+            Print only one string displaying Alice's library after rearrangement.
+            &nbsp;&nbsp;<h3><b>Constraints:-</b></h3>
+            2 grather than or equal |s| smaller than or equal 1000
+            &nbsp;&nbsp;<h3><b>Note:-</b></h3>
+            The first character of the string is '/' and the last character of the string is '\' indicating the outermost walls of the shelf. 
+            <br>
+            &nbsp;&nbsp;<h3><b>Sample Input</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Sample Output</b></h3>
+            /u/love\i\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iloveu
+            &nbsp;&nbsp;<h3><b>Time limit:-</b></h3> 2
+            &nbsp;&nbsp;<h3><b>Memory limit:-</b></h3> 256
+            <br>
+            &nbsp;&nbsp;<h3><b>Solution:-</b></h3>
+            <img class="" src="img/Stack4.png" alt="Stack3 solution">
+            <br>
+
+            
+<br><br>
+
+<b>Watch the video for understande more-</b>
+        </p>
+
+        <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XtKGmFT5NLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!--footer-->
+    <div class="footer container">
+        <p>&#169; CodersCombo All Right Reserved</p>
+    </div>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!--Link to js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post page</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <!--Nav-->
+        <div class="nav container">
+            <!--Logo-->
+            <a href="index.html" class="logo">Coders<span>Combo</span></a>
+
+            <!--<a href="#" class="login">Login</a>-->
+
+        </div>
+    </header>
+
+    <!--post content-->
+    <section class="post-header">
+        <div class="header-content post-container">
+            <!--back to home-->
+            <a href="index.html" class="back-home">Back To Home</a>
+            <!--Title-->
+            <h1 class="header-title">
+                LinkedList Datastructure
+            </h1>
+            <img src="img/LinkedList1.png" alt="" class="header-img">
+        </div>
+    </section>
+
+
+
+
+    <!--Post-->
+    <section class="post-content post-container">
+        <h2 class="sub-heading">LinkedList Datastructure</h2>
+       
+        <p class="font-1">
+            A linked Lists is a linear datastructure  that consists of a group of nodes. Its elements are stored randomly throughout memory location, unlike an array.
+            <br>
+            Each node contains two fields
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<b>* Data</b> stored at that particular address
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<b>* The pointer</b> contains the address of the next node.
+            <br>
+            A pointer to null is present at the linked list's final node to indicate that it has ended. In a linked list, the first node is typically referred to as the head node and the last node as the tail node.
+            <br>
+            <br>
+            <b>Types of Linked List:-</b>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>1) </b>Singly LinkedList
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>2) </b>Double LinkedList
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>3) </b>Circular LinkedList
+            <br>
+            <br>
+            <b>1) Singly LinkedList:-</b>
+            <br>
+            A Singly Linked List contains a node that has both the data part and pointer to the next node. The last node of the Singly Linked List has a pointer to null to represent the end of the Linked List. Traversal to previous nodes is not possible in singly Linked List i.e We can not traverse in a backward direction.
+            <br>
+            <img src="img/LinkedList2.png" alt="LinkedList example  visualised" class="">
+            <br>
+            <b>2) Double LinkedList:-</b>
+            <br>
+            Doubly Linked List contains a node that has three entries: (1) data part, (2) pointer to the next node, and (3) pointer to the previous node. We can traverse in both forward and backward directions in doubly Linked Lists.
+            <br>
+            <img src="img/LinkedList3.png" alt="LinkedList example  visualised" class="">
+            <br>
+            <b>3) Circular LinkedList:-</b>
+            <br>
+            Last item contains link of the first element as next and the first element has a link to the last element as previous.
+            <br>
+            <img src="img/LinkedList4.png" alt="LinkedList example  visualised" class="">
+            <br>
+            <br>
+            <b>Why LinkedList over array?</b> 
+            <br>
+            <br>
+            &nbsp;&nbsp;&nbsp;<b>1) </b>The size of an array is fixed. We must know the size of the array at the time of its creation, hence it is impossible to change its size at runtime.
+            <br>
+            &nbsp;&nbsp;&nbsp;<b>2) </b>Inserting a new element in an array of elements is expensive because we need to shift elements to create room for new elements to insert.
+            <br>
+            <br>
+            <b>Advantages of LinkedList:- </b>
+            <br>
+            <b>i) </b>Insertion and deletion operations are simple to implement and inexpensive because they do not need element shifting.
+            <br>
+            <b>ii) </b>They have a lively quality. As a result, we can adjust their size as needed.
+            <br>
+            <br>
+            <b>Disadvantages of Linked List:- </b>
+            <br>
+            <b>i) </b>Random access of an element is not possible in Linked Lists, we need to traverse Linked List from starting to search an element into it.
+            <br>
+            <b>ii) </b>It is relatively slow to process in comparison to an Array.
+            <br>
+            <br>
+            <h3><b>CP Problem :-</b></h3>
+            Given a singly linked list of <b>N </b> nodes.
+            <br>
+            The task is to find the <b>middle</b> of the linked list. For example, if the linked list is <b>1-> 2->3->4->5</b>, then the middle node of the list is 3.
+            <br>
+            If there are two middle nodes(in case, when N is even), print the second middle element.
+            <br>
+
+            <h3><b>Example :-</b></h3>
+            <br>
+            <b>Input:</b>
+            LinkedList: 1->2->3->4->5
+            <br>
+            <b>Output:</b>
+            Middle Value Of Linked List is : 3
+            <br>
+            Expected Time Complexity: O(n), for traversingl
+            <br>
+            Expected Auxiliary Space: O(n).for vector.
+            <br>
+            <b>Constraints:</b>
+            1 <= N <= 5000
+            <br>
+            &nbsp;&nbsp;<h3><b>Solution:-</b></h3>
+            <img class="" src="img/LinkedList5.png" alt="Stack3 solution">
+
+
+            
+            
+<!---->
+<br><br>
+
+<b>Watch the video for understande more-</b>
+        </p>
+
+        <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Lz-GSwszc6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!--footer-->
+    <div class="footer container">
+        <p>&#169; CodersCombo All Right Reserved</p>
+    </div>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!--Link to js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
