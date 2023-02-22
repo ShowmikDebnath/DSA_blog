@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backtracking Algorithm</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <!--Nav-->
+        <div class="nav container">
+            <!--Logo-->
+            <a href="index.html" class="logo">Coders<span>Combo</span></a>
+
+            <!--<a href="#" class="login">Login</a>-->
+
+        </div>
+    </header>
+
+    <!--post content-->
+    <section class="post-header">
+        <div class="header-content post-container">
+            <!--back to home-->
+            <a href="index.html" class="back-home">Back To Home</a>
+            <!--Title-->
+            <h1 class="header-title">
+                Backtracking Algorithm
+            </h1>
+            <img src="img/Bracketing Algorithom/coverpage.png" alt="" class="header-img">
+        </div>
+    </section>
+
+
+
+
+    <!--Post-->
+    <section class="post-content post-container">
+        <br>    
+        <h2 class="sub-heading">Backtracking</h2>
+
+        <p class="font-1">
+            Backtracking is a powerful algorithm for solving problems by incrementally building solutions and partially committing to each of these solutions. If at any point we realize that the solution cannot be continued, we backtrack to the previous step and try a different approach. This approach is particularly useful for solving problems that involve searching for all possible solutions, such as finding all possible paths in a graph or all possible combinations of items in a set.
+            <br>
+            Backtracking algorithms are used in many areas of computer science, including artificial intelligence, cryptography, and optimization. Some common examples of problems that can be solved using backtracking algorithms are the traveling salesman problem, the n-queens problem, and the Sudoku puzzle.
+            <br>
+            <br>
+
+            <!-- <br> <b>Consider an example of a binary search tree containing the following values: <br> -->
+            
+                <h2 class="sub-heading">The backtracking algorithm can be broken down into several key steps:
+            <br>
+                </h2>
+                
+                <br>
+                
+                1. Choose a starting point: This is usually the first step in solving a problem using backtracking. The starting point can be any feasible solution that has a potential to lead to a complete solution.
+            <br>
+            <br>
+                2. Make a move: In this step, the algorithm tries to build a solution by making a move that takes the current solution one step closer to a complete solution.
+                <br>
+                <br>
+                3. Check if the solution is complete: After making a move, the algorithm checks if the solution is complete. If the solution is complete, it is added to the set of solutions. If not, the algorithm proceeds to the next step.
+                <br>
+                <br>
+                4. Check for feasibility: In this step, the algorithm checks if the current solution is feasible. If the solution is not feasible, it is discarded and the algorithm backtracks to the previous step. If the solution is feasible, the algorithm proceeds to the next step.
+                <br>
+                <br>
+                5. Repeat the steps 2-4: The algorithm repeats the steps 2-4 until all possible solutions have been found or until it is determined that no further solutions can be found.
+                <br>
+                <br>
+                6. Backtrack: If at any point the algorithm determines that the current solution cannot be continued, it backtracks to the previous step and tries a different approach.
+
+
+                <br>
+                <br>
+                The backtracking algorithm is a recursive algorithm, which means that it calls itself repeatedly to solve sub-problems. The algorithm stops when all possible solutions have been found or when it is determined that no further solutions can be found.
+
+                <br>
+                <br>
+                <h2 class="sub-heading">Here is an example of the backtracking algorithm in action:  </h2>
+
+                <br>
+                <br>
+                
+            <img class="img-blo" src="img/Bracketing Algorithom/br2.png" alt="elements">
+
+            <br>
+            <br>
+
+            <img class="img-blo" src="img/Bracketing Algorithom/br3.png" alt="elements">
+
+            <br>
+            <br>
+
+            <img class="img-blo" src="img/Bracketing Algorithom/br4.png" alt="elements">
+            <br>
+            <br>
+
+            <h1 class="type2"> <b>CP Problem:
+            </b></h1>
+            <br>
+            The problem is to find if it is possible to assign nodes with m different colors, such that no two adjacent vertices of the graph are of the same colors in c++.
+            <br>
+            <br>
+            <h1 class="type2"> <b>Solution : 
+            </b></h1>
+            <br>
+            <br>
+            <b>Source Code</b>
+            <br>
+            <br>
+            <img class="img-blo" src="img/Bracketing Algorithom/br5.png" alt="solution">
+
+<!---->
+<br><br>
+
+<b>Watch the video for understande more-</b>
+        </p>
+
+        <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tcbcs7y82KU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!--footer-->
+    <div class="footer container">
+        <p>&#169; CodersCombo All Right Reserved</p>
+    </div>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!--Link to js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

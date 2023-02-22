@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Tree</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <!--Nav-->
+        <div class="nav container">
+            <!--Logo-->
+            <a href="index.html" class="logo">Coders<span>Combo</span></a>
+
+            <!--<a href="#" class="login">Login</a>-->
+
+        </div>
+    </header>
+
+    <!--post content-->
+    <section class="post-header">
+        <div class="header-content post-container">
+            <!--back to home-->
+            <a href="index.html" class="back-home">Back To Home</a>
+            <!--Title-->
+            <h1 class="header-title">
+                BFS
+            </h1>
+            <img src="img/BFS/Breadth-First-_Search-Algorithm.png" alt="" class="header-img">
+        </div>
+    </section>
+
+
+
+
+    <!--Post-->
+    <section class="post-content post-container">
+        <h2 class="sub-heading">Breadth-First Search (BFS)</h2>
+
+        <p class="font-1">
+            Breadth-First Search algorithm is a graph traversing technique, where you select a random initial node (source or root node) and start traversing the graph layer-wise in such a way that all the nodes and their respective children nodes are visited and explored.
+            <br>
+            <br>
+            Before we move further and understand Breadth-First Search with an example, let’s get familiar with two important terms related to graph traversal:
+
+            <!-- <br> <b>Consider an example of a binary search tree containing the following values: <br> -->
+            
+
+            <br>
+            <br>
+            <img class="img-blo" src="img/BFS/B1.png" alt="elements">
+
+            <br>
+            <br>
+            <b>Visiting a node : </b>  Just like the name suggests, visiting a node means to visit or select a node
+            <br>
+            <b>Exploring a node : </b>  Exploring the adjacent nodes (child nodes) of a selected node.
+            <br>
+            <br>
+
+            <h2 class="sub-heading">Understanding the Breadth-First Search Algorithm with an example : </h2>
+
+            <br>
+
+            Breadth-First Search algorithm follows a simple, 
+            level-based approach to solve a problem. Consider the below binary tree (which is a graph). Our aim is to traverse the graph by using the Breadth-First Search Algorithm.
+            <br>
+            <br>
+            Before we get started, you must be familiar with the main data structure involved in the Breadth-First Search algorithm.
+
+            <br><br>
+            A queue is an abstract data structure that follows the First-In-First-Out methodology (data inserted first will be accessed first). It is open on both ends, where one end is always used to insert data (enqueue) and the other is used to remove data (dequeue). 
+           
+           <br><br> <img class="img-blo" src="img/BFS/b2.png" alt="Types of array">
+            <br><br>
+            Now let’s take a look at the steps involved in traversing a graph by using Breadth-First Search:
+
+            <br>
+            <br>
+            <b><u>Step 1: </u></b>Take an Empty Queue.
+            <br>
+            <br>
+            <b><u>Step 2: </u></b>Select a starting node (visiting a node) and insert it into the Queue.
+            <br>
+            <br>
+            <b><u>Step 3: </u></b>Provided that the Queue is not empty, extract the node from the Queue and insert its child nodes (exploring a node) into the Queue.
+            <br>
+            <br>
+            <b><u>Step 4: </u></b>Print the extracted node.
+            <br>
+            <br>
+            Don’t worry if you’re confused, we shall understand this with an example.
+            <br>
+            <br>
+            Take a look at the below graph, we will use the Breadth-First Search algorithm to traverse through the graph.
+            <br>
+            <br>
+            <img class="img-blo" src="img/BFS/b3.png" alt="Types of array">
+            <br><br><br>
+            In our case, we’ll assign node ‘a’ as the root node and start traversing downward and follow the steps mentioned above.
+            <br>
+            <br>
+            The above image depicts the end-to-end process of Breadth-First Search Algorithm. Let me explain this in more depth.
+            <br>
+            <br>
+            1. Assign ‘a’ as the root node and insert it into the Queue.
+            <br>
+            2. Extract node ‘a’ from the queue and insert the child nodes of ‘a’, i.e., ‘b’ and ‘c’.
+            <br>
+            3. Print node ‘a’.
+            <br>
+            4. The queue is not empty and has node ‘b’ and ‘c’. Since ‘b’ is the first node in the queue, let’s extract it and insert the child nodes of ‘b’, i.e., node ‘d’ and ‘e’.
+            <br>
+            5. Repeat these steps until the queue gets empty. Note that the nodes that are already visited should not be added to the queue again.
+            <br>
+            6. Now let’s look at the pseudocode of Breadth-First Search algorithm.
+            <br>
+            <br>
+            <img class="img-blo" src="img/BFS/b4.png" alt="Types of array">
+            <br>
+            <br>
+            Now let’s look at the pseudocode of Breadth-First Search algorithm.
+            <br>
+            <h2 class="sub-heading">Breadth-First Search Algorithm Pseudocode</h2>
+            <br>
+            <br>
+            Here’s the pseudocode to implement the Breadth-First Search Algorithm:
+            <br>
+        
+            <br>
+            <img class="img-blo" src="img/BFS/code1.png" alt="Types of array">
+            <br><br><br>
+
+            <br>
+            <br>
+
+            In the above code, the following steps are executed:
+            <br>
+            <br>
+            1. (G, s) is input, here G is the graph and s is the root node
+            
+            <br>
+
+            2. A queue ‘Q’ is created and initialized with the source node ‘s’
+
+            <br>
+            3. All child nodes of ‘s’ are marked
+
+            <br>
+            4. Extract ‘s’ from queue and visit the child nodes
+
+            <br>
+
+            5. Process all the child nodes of v
+            
+            <br>
+
+            6. Stores w (child nodes) in Q to further visit its child nodes
+
+            <br>
+            7. Continue till ‘Q’ is empty
+
+=
+
+           
+
+
+            <h1 class="type2"> <b>CP Problem:
+            </b></h1>
+            <br>
+            Implementation of Breadth-First-_Search-Algorithm (BFS) in C++ :
+            <br>
+            <br>
+            <h1 class="type2"> <b>Solution : 
+            </b></h1>
+            <br>
+            <br>
+            <b>Source Code</b>
+            <br>
+            <br>
+            <img class="img-blo" src="img/BFS/code 2.png" alt="solution">
+
+<!---->
+<br><br>
+
+<b>Watch the video for understande more-</b>
+        </p>
+
+        <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/x9NIVm4B_JM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!--footer-->
+    <div class="footer container">
+        <p>&#169; CodersCombo All Right Reserved</p>
+    </div>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!--Link to js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

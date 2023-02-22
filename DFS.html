@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFS</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <!--Nav-->
+        <div class="nav container">
+            <!--Logo-->
+            <a href="index.html" class="logo">Coders<span>Combo</span></a>
+
+            <!--<a href="#" class="login">Login</a>-->
+
+        </div>
+    </header>
+
+    <!--post content-->
+    <section class="post-header">
+        <div class="header-content post-container">
+            <!--back to home-->
+            <a href="index.html" class="back-home">Back To Home</a>
+            <!--Title-->
+            <h1 class="header-title">
+                DFS
+            </h1>
+            <img src="img/DFS/Dfs.jpg" alt="" class="header-img">
+        </div>
+    </section>
+
+
+
+
+    <!--Post-->
+    <section class="post-content post-container">
+        <h2 class="sub-heading">Depth-First Search (DFS)</h2>
+
+        <p class="font-1">
+            Depth-First Search (DFS) is a graph traversal algorithm that starts at the root node and explores as far as possible along each branch before backtracking. 
+            In other words, it visits nodes as deep as possible before visiting their siblings. This algorithm is used to visit all the vertices of a graph or all the nodes of a tree.
+            <br>
+            <br>
+            <h2 class="sub-heading">Algorithm</h2>
+
+            The algorithm can be implemented using either recursion or a stack. The basic idea is to visit a vertex, mark it as visited, and then explore each adjacent vertex that has not been visited yet.
+            When there are no more adjacent vertices to explore, the algorithm backtracks to the previous vertex and continues exploring from there.
+
+            <br>
+            <br>
+            The steps for the DFS algorithm are as follows:
+            <br><br>
+
+            <pre>
+                1. Start at the root node and mark it as visited.
+                2. Explore each adjacent vertex that has not been visited yet.
+                3. If there are no more adjacent vertices to explore, backtrack to the previous vertex.
+                4. Repeat the process until all vertices have been visited.
+            </pre>
+            <!-- <br> <b>Consider an example of a binary search tree containing the following values: <br> -->
+            
+            <br>
+            <br>
+            <h2 class="sub-heading">Example</h2>
+            <br>
+            <br>
+            Consider the following graph:
+            <br>
+            <br>
+            <img class="img-blo" src="img/DFS/D1.png" alt="elements">
+
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <img class="img-blo" src="img/DFS/D2.png" alt="elements">
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <img class="img-blo" src="img/DFS/D3.png" alt="elements">
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <img class="img-blo" src="img/DFS/D4.png" alt="elements">
+
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <img class="img-blo" src="img/DFS/D5.png" alt="elements">
+
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <img class="img-blo" src="img/DFS/D6.png" alt="elements">
+
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <img class="img-blo" src="img/DFS/D7.png" alt="elements">
+
+            <br>
+            <br>
+
+
+            <h1 class="type2"> <b>CP Problem:
+            </b></h1>
+            <br>
+            The DFS algorithm can be implemented using either recursion or a stack. Here is an implementation using a stack:
+            <br>
+            <br>
+            <h1 class="type2"> <b>Solution : 
+            </b></h1>
+            <br>
+            <br>
+            <b>Source Code</b>
+            <br>
+            <br>
+            <img class="img-blo" src="img/DFS/code 1.png" alt="solution">
+
+<!---->
+<br><br>
+
+<b>Watch the video for understande more-</b>
+        </p>
+
+        <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iu0LiIYMlfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!--footer-->
+    <div class="footer container">
+        <p>&#169; CodersCombo All Right Reserved</p>
+    </div>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!--Link to js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
