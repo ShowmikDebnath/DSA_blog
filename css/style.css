@@ -17,7 +17,7 @@
     --container-color: #1a1e21;
     --second-color: #fd8f44;
     --text-color: #172317;
-    --bg-color: #fff;
+    --bg-color: #ffffff;
 }
 
 ::selection{
@@ -54,11 +54,7 @@ header{
     z-index: 200;
 }
 
-header.shadow{
-    background-color: var(--bg-color);
-    box-shadow: 0 1px 4px hsl(0 4% 14% /10%);
-    transition: 0.4s;
-}
+
 
 header.shadow .logo{
     color: var(--text-color);
@@ -81,19 +77,7 @@ header.shadow .logo{
 .logo span{
     color: var(--second-color);
 }
-.login{
-    padding: 8px 14px;
-    text-transform: uppercase;
-    font-weight: 500;
-    border-radius: 4px;
-    background-color: var(--second-color);
-    color: var(--bg-color);
-}
 
-.login:hover{
-    background: hsl(24, 98%, 58%);
-    transition: 0.3s;
-}
 
 .home{
     width: 100%;
@@ -116,26 +100,6 @@ header.shadow .logo{
     font-weight: 400;
 }
 
-.post-filter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 1.5rem;
-    margin-top: 2rem !important
-}
-
-.filter-item{
-    font-size: 0.9rem;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.active-filter{
-    background: var(--second-color);
-    color: var(--bg-color);
-    padding: 4px 10px;
-    border-radius: 4px;
-}
 
 .post{
     display: grid;
