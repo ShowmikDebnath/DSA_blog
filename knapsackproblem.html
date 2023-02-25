@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>knapsack</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <!--Nav-->
+        <div class="nav container">
+            <!--Logo-->
+            <a href="index.html" class="logo">Coders<span>Combo</span></a>
+
+            <!--<a href="#" class="login">Login</a>-->
+
+        </div>
+    </header>
+
+    <!--post content-->
+    <section class="post-header">
+        <div class="header-content post-container">
+            <!--back to home-->
+            <a href="index.html" class="back-home">Back To Home</a>
+            <!--Title-->
+            <h1 class="header-title">
+                Knapsack Problem
+            </h1>
+            <img src="img/kapsackproblem/knapsack.jpeg" alt="" class="header-img">
+        </div>
+    </section>
+
+
+
+
+    <!--Post-->
+    <section class="post-content post-container">
+        <h2 class="sub-heading">Knapsack Problem</h2>
+
+        <p class="font-1">
+            The knapsack problem is a well-known optimization problem in computer science. It is a combinatorial problem that deals with selecting a subset of items from a larger set to maximize a certain objective function while satisfying a constraint. In this blog, we will explore the knapsack problem in detail and understand how to solve it using various algorithms.
+            <br>
+            <br>
+            <h2 class="sub-heading">For example, consider the following scenario:</h2>
+            <br>
+            <b>Capacity = 10</b>
+            <br>
+            Items = [{weight: 2, value: 6}, {weight: 2, value: 10}, {weight: 3, value: 12}]
+            <br>
+            To maximize the value of the items we select while ensuring that the total weight of the selected items does not exceed the capacity of the knapsack, we can use the following combinations:
+
+            The problem statement is quite simple. Given a set of items, each with a weight and a value, and a knapsack of a certain capacity, we need to select a subset of items to maximize the value of the items we select while ensuring that the total weight of the selected items does not exceed the capacity of the knapsack.
+            <br>
+            <br>
+            <pre>
+              <b>  Items 1 and 2: total weight = 4, total value = 16
+                Items 1 and 3: total weight = 5, total value = 18
+                Items 2 and 3: total weight = 5, total value = 22</b>
+            </pre>
+            <br>
+            In this case, selecting <b> Items 2 and 3 </b> would give us the maximum value of <strong>22</strong> while keeping the total weight under the capacity of 10.
+            <br>
+
+    <!-- 
+                <pre>
+                    1. Start at the root node and mark it as visited.
+                    2. Explore each adjacent vertex that has not been visited yet.
+                    3. If there are no more adjacent vertices to explore, backtrack to the previous vertex.
+                    4. Repeat the process until all vertices have been visited.
+                </pre> -->
+            <!-- <br> <b>Consider an example of a binary search tree containing the following values: <br> -->
+            
+            
+            <br>
+            <h2 class="sub-heading">Brute Force</h2>
+            
+            <br>
+            The brute force approach to solve this problem is to try all possible combinations of items and find the one with the maximum value while keeping the total weight under the capacity of the knapsack. This approach has exponential time complexity and is not feasible for large inputs.
+            
+
+<br>
+<br>
+            <h1 class="type2"> <b>CP Problem:
+            </b></h1>
+            <br>
+            
+           Coin Change
+           <br>
+            <br>
+            
+            <h1 class="type2" style="text-align: center;"> <b>Solution : 
+            </b></h1>
+            <br>
+        
+            <b>Source Code</b>
+            <br>
+            <br>
+            <img class="img-blo" src="img/kapsackproblem/code.png" alt="solution">
+
+<!---->
+<br><br>
+
+<b>Watch the video for understande more-</b>
+        </p>
+        <br>
+
+        <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JeJpHGWcAgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!--footer-->
+    <div class="footer container">
+        <p>&#169; CodersCombo All Right Reserved</p>
+    </div>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!--Link to js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

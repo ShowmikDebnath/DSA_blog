@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin-Change</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <!--Nav-->
+        <div class="nav container">
+            <!--Logo-->
+            <a href="index.html" class="logo">Coders<span>Combo</span></a>
+
+            <!--<a href="#" class="login">Login</a>-->
+
+        </div>
+    </header>
+
+    <!--post content-->
+    <section class="post-header">
+        <div class="header-content post-container">
+            <!--back to home-->
+            <a href="index.html" class="back-home">Back To Home</a>
+            <!--Title-->
+            <h1 class="header-title">
+                Coin Change Problem
+            </h1>
+            <img src="img/Coin Change/header.jpg" alt="" class="header-img">
+        </div>
+    </section>
+
+
+
+
+    <!--Post-->
+    <section class="post-content post-container">
+        <h2 class="sub-heading">Coin Change Problem</h2>
+
+        <p class="font-1">
+            The coin change problem is a classic problem in computer science that deals with finding the minimum number of coins required to make a given amount of change. This problem is used in various domains like finance, gaming, and cryptography. In this blog, we will explore the coin change problem in detail and understand how to solve it using various algorithms.
+            <br>
+            <br>
+            <h2 class="sub-heading">Problem Statement:</h2>
+
+            The problem statement is quite simple. Given an amount and a set of coins, we need to find the minimum number of coins required to make the given amount. For example, consider the following scenario:
+            <br>
+            <br>
+            Amount = 11
+            <br>
+            Coins = [1, 2, 5]
+            <br>
+            <pre>
+            11 x 1
+            5 x 2 + 1 x 1
+            2 x 3 + 1 x 5
+            </pre>
+    <!-- 
+                <pre>
+                    1. Start at the root node and mark it as visited.
+                    2. Explore each adjacent vertex that has not been visited yet.
+                    3. If there are no more adjacent vertices to explore, backtrack to the previous vertex.
+                    4. Repeat the process until all vertices have been visited.
+                </pre> -->
+            <!-- <br> <b>Consider an example of a binary search tree containing the following values: <br> -->
+            
+            
+            In the first case, we are using 11 coins, in the second case, we are using 3 coins, and in the third case, we are using 8 coins. Hence, the minimum number of coins required to make an amount of 11 using the coins [1, 2, 5] is 3.
+            <br>
+            
+            <br>
+            <h2 class="sub-heading">Brute Force</h2>
+            
+            <br>
+            The brute force approach to solve this problem is to try all possible combinations of coins and find the one with the minimum number of coins. This approach has exponential time complexity and is not feasible for large inputs.
+            <br>
+            <h2 class="sub-heading" style="text-align: center;">Steps</h2>
+            <br>
+
+1. Construct a matrix where the number of raw is the
+number of amount (0-7) and number of columns is same
+as the number of coin if different denomination.
+<br>
+2. Now let, row is denoted by j and column is i and the matrix
+is a – a matrix.
+<br>
+3. So, when a[i] [j] = a[I] [0] (where j=0) set as, a[I][j] = 1 .
+<br>
+4. And when (i>j) a[i][j] = a[i-1][j].
+<br>
+        5. But when (i< j) a[i][j] = a[i-1] + a[i] [j-i]
+        <br>
+6. At last the value of the last row of last column is the final
+result.
+            
+        
+
+<br>
+<br>
+            <h1 class="type2"> <b>CP Problem:
+            </b></h1>
+           Coin Change Problem :
+            <br>
+            
+            <h1 class="type2" style="text-align: center;"> <b>Solution : 
+            </b></h1>
+            
+            <br>
+            <b>Source Code</b>
+            <br>
+            <br>
+            <img class="img-blo" src="img/Coin Change/code.png" alt="solution">
+
+<!---->
+<br><br>
+
+<b>Watch the video for understande more-</b>
+        </p>
+        <br>
+
+        <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kZyUg6lEhz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!--footer-->
+    <div class="footer container">
+        <p>&#169; CodersCombo All Right Reserved</p>
+    </div>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!--Link to js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

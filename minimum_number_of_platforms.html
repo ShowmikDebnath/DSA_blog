@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimum Number of Platform Needed</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <!--Nav-->
+        <div class="nav container">
+            <!--Logo-->
+            <a href="index.html" class="logo">Coders<span>Combo</span></a>
+
+            <!--<a href="#" class="login">Login</a>-->
+
+        </div>
+    </header>
+
+    <!--post content-->
+    <section class="post-header">
+        <div class="header-content post-container">
+            <!--back to home-->
+            <a href="index.html" class="back-home">Back To Home</a>
+            <!--Title-->
+            <h1 class="header-title">
+                Minimum Number of Platform Needed
+            </h1>
+            <img src="img/MNOP.png" alt="" class="header-img">
+        </div>
+    </section>
+
+
+
+
+    <!--Post-->
+    <section class="post-content post-container">
+        <h2 class="sub-heading">Minimum Number of Platform Needed</h2>
+        
+        <p class="font-1">
+            The arrival and departure time of all trains that reach a railway station is given. Find the minimum number of platforms required for the
+            railway station.
+            <br>
+            <br>
+            <b>Arrival times:</b> 9.00, 9.40, 9.50, 11.00<br>
+            <b>Departure times:</b> 9.10, 11.20, 11.30, 12.00<br>
+            <br>
+            <b>Algorithm:</b><br>
+            We’ll apply sorting here.
+            <br>
+            <br>
+            <b>Steps:</b> 
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 1. Take two arrays of arrival times and departure times.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 2. At first, sort all the arrival and departure times in ascending order.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 3. Then assign two pointers on the first element of two arrays.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 4. Assign two variables like number of platform exists (p=1) and number of platform needed (n=0).<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 5. Now, check if the element array of arrival is greater than the element of departure array.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 6. If it’s greater than value of n will increase.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 7. Else the value of n will decrease.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 8. And every time the departure happens before arrival, move the pointer forward.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 9. After all the iterations check if n > p and if it’s true update the value of p to n.<br>
+            
+
+<br><br>
+
+<b>Watch the video for understande more-</b>
+        </p>
+
+        <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/erSiMbqsRR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!--footer-->
+    <div class="footer container">
+        <p>&#169; CodersCombo All Right Reserved</p>
+    </div>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!--Link to js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
